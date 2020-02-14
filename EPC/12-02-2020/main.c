@@ -2,8 +2,23 @@
 #include <stdlib.h>
 #include "calculation.h"
 #include "rectangle.h"
+#define PII 3.14
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
-
+enum Direction {
+	NORTH,
+	SOUTH,
+	EAST,
+	WEST
+};
+enum Quality {
+	GOOD,
+	BAD,
+	EXCELLENT
+};
+void sayHello(char name[100]) {
+	printf("\nHello mr %s", name);
+	//return "kk";
+}
 int main(int argc, char *argv[]) {
 	float celsius;
 	/*
@@ -29,10 +44,32 @@ int main(int argc, char *argv[]) {
 	double volume = getVolumeOfCylinder(radius, height);
 	printf("Volume of a cylinder : %lf", volume);
 	*/
+	/*
 	float width, height;
 	printf("Enter rectangle's width : "); scanf("%f", &width);
 	printf("\nEnter rectangle's height : "); scanf("%f", &height);
 	printf("Rectangle's perimeter = %3.2f", getPerimeter(width, height));
 	printf("Rectangle's area = %3.2f", getArea(width, height));
+	*/
+	const PI = 3.1415; //const = constant = read only
+	//PI = 5.0;
+	//char x = 'y';
+	//input a char from keyboard
+	/*
+	char yesOrNo;
+	printf("Do you agree with this ?");
+	//yesOrNo = getchar();
+	scanf("%c", &yesOrNo);
+	printf("\n Your answer is : %c", yesOrNo);
+	*/
+	//enumeration make your code more familiar/natural language 
+	printf("Direction SOUTH is : %d", SOUTH);
+	sayHello("Hoang");
+	int a = 5;
+	int b = 2;
+	printf("\na/b = %d", 5/2);
+	printf("\na/b = %f", (float)5/(float)2);
+	//the remains of a / b  ? 
+	printf("\nremains of a / b = %d", a % b);
 	return 0;
 }
