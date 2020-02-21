@@ -5,7 +5,11 @@
  */
 package com.aptech;
 
-public class Person {
+import java.util.ArrayList;
+
+public class Person implements IPlayable{
+    //class Person implements IPlayable 
+    //= "class Person must do/implement all methods/functions in IPlayable"
     private String name, address;
     private String firstName, lastName;
     
@@ -71,4 +75,22 @@ public class Person {
         this.address = address;
     }
     */
+    //Here are some methods that relating to "playing"
+    @Override
+    public void playFootball(String address) {
+        System.out.println("I am playing football at "+address);
+    }
+    @Override
+    public void playTennis() {
+        System.out.println("I am playing tennis");
+    }
+    //...
+    //Here are some methods that relating to "learning"
+    public void gotoLibrary(String libraryName) {
+        System.out.println("I am going to library: "+libraryName);
+    }
+    public void borrowSomeBooks(ArrayList<String> bookNames) {
+        System.out.println("I am borroring books:"+bookNames.toString());
+    }
+    
 }

@@ -71,13 +71,33 @@ public class Main {
         anotherPersons.add(new Person("Priscilla","Wagner"));
         anotherPersons.add(new Person("Tom","Parker jijeirwjiriejriej ijijireji"));
         anotherPersons.add(new Person("Elvis ","Presley"));
+        /*
         anotherPersons.sort((pA, pB) -> {
             return pB.getFullName().length() - pA.getFullName().length();
         });
-        System.out.println("Longest name is :"+anotherPersons.get(0).getFullName());
+                */
         
-        System.out.println("haha");       
-
+        ArrayList<Person>  persons2 = (ArrayList<Person>)anotherPersons.clone();
+        //clone = make a copy 
+        persons2.sort((pA, pB) -> {
+            return pB.getFullName().length() - pA.getFullName().length();
+        });
+        System.out.println("Longest name is :"+persons2.get(0).getFullName());
+        System.out.println("Testing interfaces");
+        Person mrHoang = new Person("Hoang");
+        ArrayList<String> books = new ArrayList<String>();
+        books.add("Java programming"); books.add("PHP Laravel");
+        mrHoang.borrowSomeBooks(books);
+        mrHoang.gotoLibrary("Aptech Library");
+        mrHoang.playFootball("somewhere");
+        mrHoang.playTennis();
+        
+        Worker workerA = new Worker();
+        workerA.playFootball("AAA");
+        workerA.playTennis();
+        workerA.gotoLibrary("aptech libbbbb");
+        
+        
     }
 
 }
