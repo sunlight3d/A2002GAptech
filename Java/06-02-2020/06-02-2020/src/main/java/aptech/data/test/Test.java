@@ -6,10 +6,23 @@
 package aptech.data.test;
 
 import aptech.data.manager.StudentManager;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Test {
-    public static void main(String[] args) {                
+    public static void main(String[] args) {    
+        //Do you know Hashtable Map / Map?
+        //Example:
+        Map<Object, Object> person = new HashMap<Object, Object>();
+        person.put("name", "Hoang");
+        person.put("email", "hoang@gmail.com");
+        person.put("age", 18);
+        person.put(12, "xx");        
+        //this is something like "JSON object" in Javascript
+        //How to read value ?
+        System.out.println("Email = "+person.get("email"));
+        
         Scanner scanner = new Scanner(System.in);
         StudentManager studentManager = new StudentManager();
         int choice = -1;        
@@ -42,6 +55,6 @@ public class Test {
                     break;
             }
         }
-        System.out.println("This program is ended");
+        System.out.println("This program is ended");        
     }
 }
