@@ -20,7 +20,15 @@ public class MainActivity extends AppCompatActivity implements IMyActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
+        // Get the Intent that started this activity and extract the string
+        String email = getIntent().getStringExtra("email");
+        Toast.makeText(this, "Email = "+email, Toast.LENGTH_LONG).show();
         mapUIToProperties();
+        setupActions();
+    }
+
+    @Override
+    public void setupActions() {
         btnSum2Numbers.setOnClickListener((view) -> {
             Float x = Float.valueOf(textViewX.getText().toString());
             Float y = Float.valueOf(textViewY.getText().toString());
@@ -36,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements IMyActivity{
             txtResult.setText("sum "+x+" + "+y+" = "+(x+y));
         });
     }
+
     @Override
     public void mapUIToProperties() {
         //We want every dev use this method => let's create interface

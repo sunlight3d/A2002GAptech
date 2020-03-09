@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity"
             />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".LoginActivity" android:configChanges="screenSize|orientation|screenLayout|navigation">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
