@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/productItem"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+
+    tools:context=".ProductsActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<ImageView
+    android:id="@+id/imageViewProductURL"
+    android:src="@drawable/notification_icon"
+    android:layout_width="100dp"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginStart="10dp"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="10dp"
+    android:layout_height="100dp" />
+    <TextView
+        android:id="@+id/txtProductName"
+        android:text="product's name"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/imageViewProductURL"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toTopOf="@id/imageViewProductURL"
+        />
+    <TextView
+        android:id="@+id/txtProductYear"
+        android:text="year"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/imageViewProductURL"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toBottomOf="@id/txtProductName"
+        />
+    <TextView
+        android:id="@+id/txtProductDescription"
+        android:text="description"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/imageViewProductURL"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toBottomOf="@id/txtProductYear"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
