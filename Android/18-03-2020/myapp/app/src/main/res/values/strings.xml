@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">myapp</string>
+    <string name="register_or_not">Not a member ? <u>Signup now</u></string>
+</resources>
