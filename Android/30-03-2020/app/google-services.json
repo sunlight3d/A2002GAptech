@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "628485526668",
+    "firebase_url": "https://a2002gaptech.firebaseio.com",
+    "project_id": "a2002gaptech",
+    "storage_bucket": "a2002gaptech.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628485526668:android:8ec3bfa4ee80bb0594d7a9",
+        "android_client_info": {
+          "package_name": "com.example.firebaseexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628485526668-0kabb1co5nkbpcraag71fus00j2rn92k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrvS6ApFDUVOygczcFb16m_OpahTObpJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628485526668-0kabb1co5nkbpcraag71fus00j2rn92k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
